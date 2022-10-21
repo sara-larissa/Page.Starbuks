@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbuks - tela</title>
+</head>
+<body>
+    
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></a></li>
+            <li><a href="#">Menu</a></a></li>
+            <li><a href="#">WhatsApp</a></a></li>
+            <li><a href="#">Contato</a></a></li>
+        </ul>    
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> Isso não é apenas um café. É <span>Starbuks!</span></h2>
+            <p>
+                <strong> A PRIMEIRA LOJA STARBUKS DO BRASIL. </strong>Inaugurada no ano de 2006, localizada no Shopping Morumbi, em São Paulo a primeira loja do Starbuks em terras brasileiras precisou passar por algumas modificações em seu cardápio, por exemplo, pão de queijo e muffin salgados foram incluídos no cardápio da cafeteria e alguns blends “abrasileirados”. Atualmente, a Starbucks já possui mais de 70 unidades de lojas espalhadas em grandes cidades do Brasil, dentre elas: São Paulo e Rio de Janeiro, vale ressaltar que  a caffeteria mais famosa do mundo atua em 65 países e possui mais de 20.500 pontos de venda. 
+            </p>
+            <a href="#">Leia mais</a>
+            </div>
+        <div class="imgBox">
+            <img src="./img/img1.png" class="starbuks">
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/thumb1.png" onclick="imgSlider('./img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="./img/thumb2.png" onclick="imgSlider('./img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./img/thumb3.png" onclick="imgSlider('./img/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+       <ul class="sci">
+        <li><a href="#"><img src="./img/facebook.png"></a></li>
+        <li><a href="#"><img src="./img/twitter.png"></a></li>
+        <li><a href="#"><img src="./img/instagram.png"></a></li>
+       </ul>
+    </section>
+
+        <script type="text/javascript">
+         function imgSlider(anything) {
+            document.querySelector('.starbuks').src = anything;
+         }   
+
+         function changeCircleColor(color){
+            const circulo = document.querySelector('.circulo');
+            circulo.style.background = color;
+         }
+        </script>
+        
+</body>
+</html>
